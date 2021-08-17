@@ -1,0 +1,9 @@
+Analysis of Variance Table
+
+Response: numCase
+             Df Sum Sq Mean Sq F value  Pr(>F)  
+typeOfCancer  3 948.67 316.222  4.0950 0.06705 .
+countries     2 216.67 108.333  1.4029 0.31634  
+Residuals     6 463.33  77.222                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

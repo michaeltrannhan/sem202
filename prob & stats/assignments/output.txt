@@ -1,0 +1,8 @@
+function (x, df1, df2, ncp, log = FALSE) 
+{
+    if (missing(ncp)) 
+        .Call(C_df, x, df1, df2, log)
+    else .Call(C_dnf, x, df1, df2, ncp, log)
+}
+<bytecode: 0x00000241729690d8>
+<environment: namespace:stats>

@@ -1,0 +1,34 @@
+PROBLEM 1: 
+What is "race condition"?
+- "race condition" is the situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place.
+- It is typically behave in two situations:
+    - "Read-Modify-Write critical sections
+    - "Check-Then- Act critical sections
+
+
+The function deposit(amount) can be understand as depositing money into account with "amount".
+As a result, we can translate it into CPU instructions like this:
+    - Read current amount of money in the account(memory location)
+    - Add "amount" to current amount
+    - Write new amount of money to the memory
+
+Decomposing the withdraw(amount), we still get almost the same principle :
+    - Read current amount of money in the account(memory location)0
+    - Subtract "amount" from current amount
+    - Write new amount of money to the memory
+-> the problem lies into Read-Modify-Write situation.
+Assume that the current amount of money in the bank is 1000 USD. Then assume thread A is the husband, thread B is the wife.
+Then if thread A withdraw amount of 500USD, the final amount would be 500USD. 
+Same with thread B deposit amount of 500USD, the final amount would be 1500USD.
+-> because 2 threads are running parrallel, then both of the situations are totally wrong. 
+
+--> thread which execute last would be the result in the bank memory. So the bank account will either have more than 500USD or missing half of their money.
+
+=> Solution is prevent the race condition here, synchronization is needed. 
+    - Use mutex lock or semaphore.
+    - use atomic instructions.
+
+PROBLEM 2:
+The nosynch will be implemented,  waiting for the watch_count() thread to finish all the work, only after that the mutex lock would be opened for the execution of inc_count() thread. However, the inc_count() of thread 2 and 3 might be executed once beforehand due to no synchronization.
+To explain the reason why, there was no signal passed to the watch_count() thread at all, and race condition happened; comparing to the program cond_usg, in which the global variable "count" should be 20 for the signal to be passed.
+

@@ -1,0 +1,1 @@
+t.test(diett$pre.weight, diett$weight6weeks, paired = TRUE)

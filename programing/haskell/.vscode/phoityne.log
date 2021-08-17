@@ -1,0 +1,22 @@
+2021-03-23 14:54:42.116927400000 [$pid(ThreadId 5)] ERROR APP - [CRITICAL] can not get the initial ghci prompt.
+2021-03-23 14:54:52.254865300000 [$pid(ThreadId 5)] ERROR APP - [CRITICAL] can not get the initial ghci prompt.
+2021-03-23 14:55:24.212512200000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 14:55:32.393733100000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 14:55:38.751986600000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:55:39.562448600000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:55:40.448284300000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:57:08.995966300000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 14:57:09.300287300000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:57:09.482874900000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:57:09.682298500000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:27.848296400000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 14:59:29.405286400000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:29.946776300000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:29.977752300000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:30.012800900000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:30.044819600000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:30.074837200000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 14:59:30.106834100000 [$pid(ThreadId 5)] ERROR APP - user error (ExecResult not found.)
+2021-03-23 15:01:23.511414700000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 15:04:11.704299500000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2021-03-23 15:06:34.694563000000 [$pid(ThreadId 5)] ERROR APP - [CRITICAL] can not get the initial ghci prompt.

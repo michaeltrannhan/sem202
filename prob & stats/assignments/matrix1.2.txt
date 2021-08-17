@@ -1,0 +1,5 @@
+           Us Japan UK
+Colorectal 11     5  5
+Breast     15     3  7
+Stomach     3    22  3
+Other      41    30 15

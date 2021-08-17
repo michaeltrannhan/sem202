@@ -1,0 +1,17 @@
+3.1 QUESTIONS 
+1. What the output will be at LINE A ? Does this value not change for every process executions? Explain your answer.
+	- The output at Line A will be an Integer represent for the return of the process ID of the calling process. The value will be change every process execution.
+
+2.What the output will be at line C ? Explain your answer/
+	- The output at line C will be 19. Because there are "wait" execution, the parent process must wait for the child process to be done first. However, the variable "value" does not change because it only affects to the child process, without interfering to the parents process.
+
+3. Remove line B from the program. Observe your display result onto the screen and give your remark.
+	- At first, when not removing line B: "
+PID of child process = 1085                                                            
+PARENT: value = 19 
+"
+	- Then, removing line B : "
+PARENT: value    =            19                                                                                                             
+PID of child process = 1038 (which is current PID)     
+"
+	---> In conclusion, line B is the thing to notify the parent process not to execute until the children is executed. If we remove line B, the parent will be executed concurrently and display in a random order(in this case will be the parents then children).

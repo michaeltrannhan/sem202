@@ -1,0 +1,34 @@
+library(readr)
+diet = read.csv("Diet.csv", row.names = 1)
+diet$Weight.lost = diet$pre.weight - diet$weight6weeks  #creating additional column called weight.lost
+diet$diet_type <- factor(diet$Diet, labels = c("A", "B", "C")) #creating additional column called diet_type to specify what diet they are using (1, 2 or 3)
+# diet$gender = factor(diet$gender, labels = c("Female", "Male")) #
+
+boxplot(Weight.lost~diet_type, data=diet,col="gray",  ylab = "Weight loss (in Kg)", xlab = "Diet type") ## boxplot example of weightloss and diet type
+abline(h = 0, col = "blue")
+
+
+# #### Each variable descriptive statistics
+# ## We should only focus on the SCALED attributes because others are binary or an index
+# #Age 
+# mean(diet$Age) #for mean
+# var(diet$Age) #for variance
+# sd(diet$Age) #for standard deviation * alternative = sqrt(var(diet$Age))
+# max(diet$Age) #Max age 
+# min(diet$Age) #Min age
+# range(diet$Age) #Age range ***alternative = max - min
+# 
+# #a very fast way to display : Min - first quartile - median - third quartile - Max
+# fivenum(diet$Age)
+# 
+# #for quantiles
+# quantile(diet$Age)
+# 
+# boxplot
+
+
+####data cleaning (NA)
+diett = na.omit(diet)
+
+#for descriptive statistic info
+print(summary(diett))

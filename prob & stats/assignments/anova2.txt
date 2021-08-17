@@ -1,0 +1,12 @@
+Call:
+   aov(formula = diett$Weight.lost ~ diett$gender * diett$diet_type)
+
+Terms:
+                diett$gender diett$diet_type diett$gender:diett$diet_type
+Sum of Squares        0.2785         60.4172                      33.9041
+Deg. of Freedom            1               2                            2
+                Residuals
+Sum of Squares   376.3290
+Deg. of Freedom        70
+
+Residual standard error: 2.318648

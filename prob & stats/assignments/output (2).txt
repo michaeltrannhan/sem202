@@ -1,0 +1,4 @@
+      Colorectal Breast Stomach Others
+US            11     41      22      7
+Japan         15      5      30      3
+UK             3      3       5     15

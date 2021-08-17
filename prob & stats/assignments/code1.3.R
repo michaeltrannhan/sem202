@@ -1,0 +1,6 @@
+library(readxl)
+data <- read_excel("C:/Users/xps/Desktop/data.xlsx")
+View(data)
+data$store = as.factor(data$store)
+aov = aov(data=data, formula = sales~store)
+summary(aov)
